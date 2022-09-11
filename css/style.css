@@ -3,23 +3,108 @@
   --clr-secondary: hsl(0, 0%, 0%);
 
   --font-primary: "Raleway", sans-serif;
+  --font-secondary: "Roboto", sans-serif;
 }
 
-nav {
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0.3125rem;
+  padding-top: 0;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 2px solid var(--clr-secondary);
+  padding: 0.5rem 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
   font-family: var(--font-primary);
   font-size: 2rem;
   text-transform: uppercase;
-  width: 30%;
-  border-bottom: 2px solid hsl(0, 0%, 95%);
-  margin-left: calc(4% / 6);
-  padding: 0.25em 0;
+}
+
+.logo-img {
+  width: 3rem;
+  height: 3rem;
+  margin: 0 0.5rem 0 0;
+}
+
+.navbar-list {
+  display: flex;
+}
+
+.navbar-links {
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+  margin-left: 1em;
+  position: relative;
+}
+.navbar-links::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  border-bottom: 2px solid var(--clr-secondary);
+  transition: 0.5s;
+}
+
+.navbar-links:hover::after {
+  width: 100%;
+  left: 0%;
+}
+
+.category-title {
+  display: inline-block;
+  position: relative;
+  font-family: var(--font-primary);
+  color: var(--clr-primary);
+  background-color: var(--clr-secondary);
+  border-radius: 0.3em;
+  font-weight: 700;
+  font-size: 1.25rem;
+  padding: 0 1rem;
+  margin: 1rem 0;
 }
 
 img {
-  width: 32%;
-  height: 380px;
-  margin: calc(4% / 6);
+  width: 100%;
+  aspect-ratio: 1;
   object-fit: cover;
   object-position: center;
-  display: inline;
+  transition: 0.5s;
+}
+img:hover {
+  filter: saturate(1.25);
+}
+
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .image-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .image-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }

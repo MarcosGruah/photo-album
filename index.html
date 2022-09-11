@@ -7,59 +7,85 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
     <title>Photo/Album</title>
   </head>
-  <body>
+  <body id="Home">
     <header>
-      <nav>Photo/Album</nav>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="images/logo.svg" alt="" class="logo-img" />
+          <h1 class="logo-text">Photo/Album</h1>
+        </div>
+        <menu>
+          <ul class="navbar-list" role="list">
+            <li><a class="navbar-links" href="#Home">Home</a></li>
+            <li><a class="navbar-links" href="#Animals">Animals</a></li>
+            <li><a class="navbar-links" href="#Nature">Nature</a></li>
+            <li><a class="navbar-links" href="#Sports">Sports</a></li>
+          </ul></menu
+        >
+      </nav>
     </header>
     <main>
-      <img src="images/adam-rhodes-R5l21FD0ZZM-unsplash.jpg" alt="" /><img
-        src="images/artem-kniaz-mI3C2psUAd8-unsplash.jpg"
-        alt=""
-      /><img src="images/catgirlmutant-I_6UyqYNj3c-unsplash.jpg" alt="" /><img
-        src="images/claudio-schwarz-VB9D78qQ6nw-unsplash.jpg"
-        alt=""
-      /><img src="images/david-clode-eTXy1N0jRPI-unsplash.jpg" alt="" /><img
-        src="images/dylan-shaw-A8Ig1GNYfSk-unsplash.jpg"
-        alt=""
-      /><img
-        src="images/emmanuel-phaeton-fu6onfgwyjs-unsplash.jpg"
-        alt=""
-      /><img src="images/gaelle-marcel-f5q4uegGC8E-unsplash.jpg" alt="" /><img
-        src="images/lukas-souza-vjFC9OjrOtA-unsplash.jpg"
-        alt=""
-      /><img src="images/markus-spiske-OwACl3hgRY8-unsplash.jpg" alt="" /><img
-        src="images/natali-hordiiuk-HEHIGACpCWM-unsplash.jpg"
-        alt=""
-      /><img src="images/natali-hordiiuk-m2aaNDlmnHg-unsplash.jpg" alt="" /><img
-        src="images/olena-sergienko-7ueMRO6sXlE-unsplash.jpg"
-        alt=""
-      /><img
-        src="images/parker-wichelmann--_PBINF6ilU-unsplash.jpg"
-        alt=""
-      /><img src="images/pedro-godoy-PDd0X2anD2k-unsplash.jpg" alt="" /><img
-        src="images/pramod-tiwari-F0wpbZQfS60-unsplash.jpg"
-        alt=""
-      /><img
-        src="images/raphael-nogueira-OkiDIla7K8Q-unsplash.jpg"
-        alt=""
-      /><img src="images/simon-barber-b8o13iK6-V8-unsplash.jpg" alt="" /><img
-        src="images/till-daling-GAaJ2G6i_Ow-unsplash.jpg"
-        alt=""
-      /><img src="images/xu-duo-jIUZjm_APyk-unsplash.jpg" alt="" /><img
-        src="images/zetong-li-dxksyYhjAnU-unsplash.jpg"
-        alt=""
-      /><img src="images/zineb-mezidi-vKklCNluomo-unsplash.jpg" alt="" /><img
-        src="images/ivan-sabayuki-Ig8GYyMGkOA-unsplash.jpg"
-        alt=""
-      /><img src="images/tim-simon-4OaKzLETV_U-unsplash.jpg" alt="" />
+      <section>
+        <h2 id="Animals" class="category-title">Animals</h2>
+        <div class="image-container">
+          <img src="images/animals/allyson-beaucourt-skHOVrbN8LA-unsplash.jpg" alt="" />
+          <img src="images/animals/bart-van-meele-maxbZW7MKs4-unsplash.jpg" alt="" />
+          <img src="images/animals/ivan-sabayuki-Ig8GYyMGkOA-unsplash.jpg" alt="" />
+          <img src="images/animals/jevgeni-fil-lR55uzEBD1E-unsplash.jpg" alt="" />
+          <img src="images/animals/jomark-francis-velasco-yjNTysD-76w-unsplash.jpg" alt="" />
+          <img src="images/animals/komal-g--dgMY7ASuPI-unsplash.jpg" alt="" />
+          <img src="images/animals/komal-g--woHVwkfWCc-unsplash.jpg" alt="" />
+          <img src="images/animals/maxime-gilbert-ulTht76AzjE-unsplash.jpg" alt="" />
+          <img src="images/animals/michail-dementiev-DYuwS94fJww-unsplash.jpg" alt="" />
+          <img src="images/animals/tim-simon-4OaKzLETV_U-unsplash (1).jpg" alt="" />
+          <img src="images/animals/wolfgang-hasselmann-6DAS4Rx4Az4-unsplash.jpg" alt="" />
+          <img src="images/animals/zineb-mezidi-M95xTcAJazw-unsplash.jpg" alt="" />
+        </div>
+      </section>
+
+      <section>
+        <h2 id="Nature" class="category-title">Nature</h2>
+        <div class="image-container">
+          <img src="images/nature/anamnesis33-q_Am3g0Peaw-unsplash.jpg" alt="" />
+          <img src="images/nature/fanny-gustafsson-cSTreRUUf6M-unsplash.jpg" alt="" />
+          <img src="images/nature/hiroyuki-sen-9L6BaV8sAZA-unsplash.jpg" alt="" />
+          <img src="images/nature/inframe-studio-s-YakPVXXnmO4-unsplash.jpg" alt="" />
+          <img src="images/nature/marek-piwnicki-AWZ7W4Cbstc-unsplash.jpg" alt="" />
+          <img src="images/nature/marek-piwnicki-Kn0O9OOgEJY-unsplash.jpg" alt="" />
+          <img src="images/nature/marjan-taghipour-O_XpSoFwnYk-unsplash.jpg" alt="" />
+          <img src="images/nature/maxime-gilbert-eOzXTfex0n0-unsplash.jpg" alt="" />
+          <img src="images/nature/sergey-kvint-succXIyMJno-unsplash.jpg" alt="" />
+          <img src="images/nature/zetong-li-3-3ie5ogJLg-unsplash.jpg" alt="" />
+          <img src="images/nature/zineb-mezidi-9WhYLmaYxOM-unsplash.jpg" alt="" />
+          <img src="images/nature/zineb-mezidi-vKklCNluomo-unsplash.jpg" alt="" />
+        </div>
+      </section>
+      <section>
+        <h2 id="Sports" class="category-title">Sports</h2>
+        <div class="image-container">
+          <img src="images/sports/ainur-khakimov-xtCkU6B4k00-unsplash.jpg" alt="" />
+          <img src="images/sports/ainur-khakimov-ZDrnjQVALWU-unsplash.jpg" alt="" />
+          <img src="images/sports/bastian-riccardi-vBF2yw6upkc-unsplash.jpg" alt="" />
+          <img src="images/sports/bastien-plu-BcQBVsMkRpw-unsplash.jpg" alt="" />
+          <img src="images/sports/bastien-plu-O6RyourKu3g-unsplash.jpg" alt="" />
+          <img src="images/sports/campbell-zachara-8uduf7LddAI-unsplash.jpg" alt="" />
+          <img src="images/sports/daniel-castellon-v-_zhKFULl4-unsplash.jpg" alt="" />
+          <img src="images/sports/markus-spiske-dOpAEfI4aSc-unsplash.jpg" alt="" />
+          <img src="images/sports/nathan-dumlao-B8Ibr9mPY0o-unsplash.jpg" alt="" />
+          <img src="images/sports/ruben-christen-Q_QSzOdpCwc-unsplash.jpg" alt="" />
+          <img src="images/sports/steward-masweneng-h36zCnhQaQk-unsplash.jpg" alt="" />
+          <img src="images/sports/tim-mossholder-jseAxwSl3BI-unsplash.jpg" alt="" />
+        </div>
+      </section>
     </main>
-    <footer>Footer Content</footer>
   </body>
 </html>
