@@ -1,2 +1,3 @@
 # Photo-Album
- A very simple Photo Album using basic HTML and CSS.
+
+A very simple, Mobile Responsive Photo Album using basic HTML and CSS.
