@@ -8,11 +8,21 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 82px;
 }
 
 body {
   padding: 0.3125rem;
   padding-top: 0;
+}
+
+/* START HEADER */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--clr-primary);
 }
 .navbar {
   display: flex;
@@ -66,6 +76,10 @@ body {
   left: 0%;
 }
 
+/* END HEADER */
+
+/* START MAIN */
+
 .category-title {
   display: inline-block;
   position: relative;
@@ -108,3 +122,5 @@ img:hover {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
+/* END MAIN */
