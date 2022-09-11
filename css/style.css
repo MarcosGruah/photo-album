@@ -1,0 +1,25 @@
+:root {
+  --clr-primary: hsl(0, 0%, 100%);
+  --clr-secondary: hsl(0, 0%, 0%);
+
+  --font-primary: "Raleway", sans-serif;
+}
+
+nav {
+  font-family: var(--font-primary);
+  font-size: 2rem;
+  text-transform: uppercase;
+  width: 30%;
+  border-bottom: 2px solid hsl(0, 0%, 95%);
+  margin-left: calc(4% / 6);
+  padding: 0.25em 0;
+}
+
+img {
+  width: 32%;
+  height: 380px;
+  margin: calc(4% / 6);
+  object-fit: cover;
+  object-position: center;
+  display: inline;
+}
