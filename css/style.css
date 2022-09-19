@@ -8,17 +8,19 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 82px;
+  scroll-padding-top: 76px;
 }
 
-body {
-  padding: 0.3125rem;
-  padding-top: 0;
+.disable-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 /* START HEADER */
 
-header {
+/* header {
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -74,8 +76,117 @@ header {
 .navbar-links:hover::after {
   width: 100%;
   left: 0%;
+} */
+
+/* END HEADER */
+
+/* START HEADER */
+
+header {
+  color: var(--clr-secondary);
+  background-color: var(--clr-primary);
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
 }
 
+.logo-img {
+  margin: auto;
+  width: 24px;
+  height: 24px;
+  display: none;
+}
+
+.logo-text {
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-size: 1.5rem;
+  padding: 0.5em 0;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  margin-left: 1em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background: var(--clr-secondary);
+  height: 2px;
+  width: 2em;
+  border-radius: 2px;
+  position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: "";
+  position: absolute;
+}
+
+.nav-toggle-label span::before {
+  bottom: 7px;
+}
+
+.nav-toggle-label span::after {
+  top: 7px;
+}
+
+nav {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  background: var(--clr-primary);
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  margin-bottom: 1em;
+}
+
+nav a {
+  color: var(--clr-secondary);
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+
+nav a:hover {
+  color: red;
+}
+
+.nav-toggle:checked ~ nav {
+  transform: scale(1, 1);
+}
+
+.nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 250ms;
+}
 /* END HEADER */
 
 /* START MAIN */
