@@ -1,3 +1,5 @@
 # Photo-Album
 
-A very simple, Mobile Responsive Photo Album using basic HTML and CSS.
+A very simple Photo Album with responsive features using only HTML and CSS.
+
+![Photo Album](https://i.imgur.com/hMONknj.jpg 'Photo Album')

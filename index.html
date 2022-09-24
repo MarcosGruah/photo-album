@@ -18,21 +18,22 @@
   </head>
   <body id="Home">
     <header>
-      <nav class="navbar">
-        <div class="logo">
-          <img src="images/logo.svg" alt="" class="logo-img" />
-          <h1 class="logo-text">Photo/Album</h1>
-        </div>
-        <menu>
-          <ul class="navbar-list" role="list">
-            <li><a class="navbar-links" href="#Home">Home</a></li>
-            <li><a class="navbar-links" href="#Animals">Animals</a></li>
-            <li><a class="navbar-links" href="#Nature">Nature</a></li>
-            <li><a class="navbar-links" href="#Sports">Sports</a></li>
-          </ul></menu
-        >
+      <img class="logo-img disable-select" src="images/logo.svg" alt="" />
+      <h1 class="logo-text disable-select">Photo/Album</h1>
+      <input class="nav-toggle" type="checkbox" id="nav-toggle" />
+      <nav>
+        <ul>
+          <li><a class="disable-select" href="#Home">Home</a></li>
+          <li><a class="disable-select" href="#Animals">Animals</a></li>
+          <li><a class="disable-select" href="#Nature">Nature</a></li>
+          <li><a class="disable-select" href="#Sports">Sports</a></li>
+        </ul>
       </nav>
+      <label class="nav-toggle-label" for="nav-toggle">
+        <span class="disable-select"></span>
+      </label>
     </header>
+
     <main>
       <section>
         <h2 id="Animals" class="category-title">Animals</h2>
